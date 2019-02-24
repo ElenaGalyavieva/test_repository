@@ -1,31 +1,29 @@
 # test Repository
-MainClass.java
-import org.junit.Test;
-
 public class MainClass {
+private int class_number=20;
 
-public int getLocalNumber()
-{
-return 14;
+public int getClassNumber () {
+return class_number;
 }
 }
+
 
 
 MainClassTest.java
 import org.junit.Test;
 
-public class MainClassTest extends MainClass{
-
+public class MainClassTest extends MainClass {
 @Test
-public void testGetLocalNumber()
-{
-int a=this.getLocalNumber();
+public void testGetClassNumber() {
+int a=this.getClassNumber();
 
-if (a==14) {
-System.out.println("True");
-} else {
+if (a>45)
+{
 System.out.println("False");
 }
+else {
+System.out.println("True");
+}
+}
 }
 
-}
